@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --Red: hsl(0, 87%, 67%);
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+header {
+    padding: 50px 100px 30px 150px;
+    height: 35vh;
+}
+
+header nav,
+nav ul,
+div.left {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+header nav span img {
+    max-width: 200px;
+    max-height: 35px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--Grayish-Violet);
+}
+
+header nav ul li a:hover {
+    color: var(--Very-Dark-Violet);
+}
+
+header nav ul div.left {
+    margin-left: auto;
+}
+
+header nav ul div.left li a.bg {
+    background-color: var(--Cyan);
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+}
+
+section#one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    width: 100%;
+    max-height: 700px;
+}
+
+section#one div.words {
+    max-width: 500px;
+}
+
+section#one div.words h2 {
+    color: var(--Very-Dark-Blue);
+    /* font-size: 60px; */
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+section#one div.words p {
+    line-height: 1.5;
+    padding: 15px 0 25px;
+}
+
+section#one div img {
+    max-width: 600px;
+    height: 400px;
+}
+
+section#one button {
+    color: #fff;
+    background-color: var(--Cyan);
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 50px;
+}
+
+section#two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Dark-Violet);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 150px;
+    z-index: -2;
+}
+
+section.ob {
+    background: url(./Images/bg-shorten-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#two input {
+    border: 0;
+    border-radius: 10px;
+    width: 730px;
+    height: 60px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+section#two input::placeholder {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+section#two button {
+    background-color: var(--Cyan);
+    width: 230px;
+    height: 60px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
